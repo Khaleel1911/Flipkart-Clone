@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f2f4;
+}
+
+.navbar{
+    min-height: 70px;
+    width: 100vw;
+    /* margin-bottom: 5px; */
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    z-index: 100;
+    /* background-color: #f0f5ff; */
+    background-color: #ffffff;
+    /* border: 2px solid red; */
+}
+
+input{
+    height: 40px;
+    width:100% ;
+    padding-left: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #f0f5ff;
+    font-size: clamp(1vw,3.5vw,1rem);
+    margin-right: 1.5rem;
+}
+
+#bars{
+    position: relative;
+    left: 40px;
+}
+.logo-container{
+
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* border: 2px solid red; */
+}
+.search-container{
+    /* border: 2px solid black; */
+    width: 45%;
+}
+.inner-search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.menu-container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    flex-basis: auto;
+    gap: 5px;
+    overflow:hidden;
+    /* border: 2px solid green; */
+}
+
+button{
+    background-color: #ffffff;
+    border: none;
+    display: flex;
+    /* width: 120px; */
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter" , sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    /* border:2px solid red ; */
+    border-radius: 10px;
+    padding:8px 12px;
+    outline: none;
+}
+
+#login:hover{
+    background-color: blue;
+    color: white;
+}
+.icon-text{
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .icon-text {
+      display: block;
+    }
+   
+  }
+
+@media screen  and (max-width:770px){
+    .navbar{
+        height: 100px;
+        width: 100vw;
+        /* flex-direction: column; */
+        flex-wrap:wrap;
+
+    }
+    .search-container{
+        min-width: 100vw;
+            margin-bottom: 10px;
+        order: 2;
+    }
+    .menu-container{
+        /* order:1; */
+        width: 50%;
+        
+    }
+    .logo-container{
+        width: 50%;
+        /* order: 3; */
+    }
+    #dots, #store{
+        display: none;
+    }
+}
+  

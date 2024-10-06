@@ -1,0 +1,33 @@
+.slider{
+    margin: 10px 20px;
+    background-color: white;
+    min-height: 220px;
+    max-width: 100vw;
+    background-image: url("./slider-images/one.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.slider > button{
+    height: 85px;
+    width: 35px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+#right{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#left{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+

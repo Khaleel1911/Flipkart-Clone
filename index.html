@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="icons.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="product-banner.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="bestofelectronics.css" />
+    <link rel="stylesheet" href="poster.css" />
+    <link rel="stylesheet" href="footer.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo-container">
+        <span class="material-symbols-outlined" id="bars"> menu </span>
+        <a href="index.html"
+          ><img src="./images/flipkart-logo.svg" alt="Flipkart"
+        /></a>
+      </div>
+
+      <div class="search-container">
+        <div class="inner-search-container">
+          <span class="material-symbols-outlined search-icon"> search </span>
+          <input
+            class="inter-default-font"
+            type="text"
+            placeholder="Search for Products,Brands and More"
+          />
+        </div>
+      </div>
+
+      <div class="menu-container inter-default-font">
+        <button id="login">
+          <span class="material-symbols-outlined"> account_circle </span>
+          Login
+          <span class="material-symbols-outlined" id="arrow">
+            keyboard_arrow_down
+          </span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined"> shopping_cart </span>
+          <span class="icon-text">Cart</span>
+        </button>
+        <button id="store">
+          <span class="material-symbols-outlined"> storefront </span>
+          <span class="icon-text">Become a Seller</span></button
+        ><a href="#"></a>
+        <button id="dots">
+          <span class="material-symbols-outlined"> more_vert </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- this is main content -->
+
+    <div class="product-banner">
+      <div class="box">
+        <a href="#"
+          ><img src="./product-banner images/topoffers.webp" alt="Topoffers" /></a
+        ><span>Top Offers</span>
+      </div>
+      <div class="box">
+        <a href="#"
+          ><img
+            src="./product-banner images/mobiles.webp"
+            alt="Mobiles & Tablets" /></a
+        ><span>Mobiles & Tablets</span>
+      </div>
+      <div class="box">
+        <a href="#"><img src="./product-banner images/tvs.webp" alt="Tvs" /></a
+        ><span>TVs & Appliances</span>
+      </div>
+      <div class="box">
+        <a href="#"
+          ><img
+            src="./product-banner images/electronics.webp"
+            alt="Electronics" /></a
+        ><span>Electronics</span>
+      </div>
+      <div class="box">
+        <a href="#"
+          ><img src="./product-banner images/fashion.webp" alt="Fashion" /></a
+        ><span>Fashion</span>
+      </div>
+      <div class="box">
+        <a href="#"
+          ><img src="./product-banner images/beauty.webp" alt="Beauty" /></a
+        ><span>Beauty</span>
+      </div>
+      <div class="box">
+        <a href="#"><img src="./product-banner images/home.webp" alt="Home" /></a
+        ><span>Home & Kitchen</span>
+      </div>
+      <div class="box">
+        <a href="#"
+          ><img src="./product-banner images/furniture.webp" alt="furniture" /></a
+        ><span>Furniture</span>
+      </div>
+      <div class="box">
+        <a href="#"
+          ><img src="./product-banner images/travel.webp" alt="Travel" /></a
+        ><span>Travel</span>
+      </div>
+      <div class="box">
+        <a href="#"
+          ><img src="./product-banner images/grocery.webp" alt="Grocery" /></a
+        ><span>Grocery</span>
+      </div>
+    </div>
+
+    <!-- slider starts here -->
+    <div class="slider" id="slider">
+      <button id="left" onclick="left()">
+        <span class="material-symbols-outlined" style="color: gray">
+          chevron_left
+        </span>
+      </button>
+      <button id="right" onclick="right()">
+        <span class="material-symbols-outlined" style="color: gray">
+          chevron_right
+        </span>
+      </button>
+    </div>
+
+    <div class="bestofelectronics">
+      <span>Best Of Electronics</span>
+      <div class="card-container">
+        <div class="card">
+          <img src="./bestofelectronics/earbuds.jpeg" alt="" /><span class="desc"
+            >Best True Wireless Earbuds</span
+          >
+          <span class="price">Grab Now</span>
+        </div>
+        <div class="card">
+          <img src="./bestofelectronics/smartwatch.jpeg" alt="" />
+          <span class="desc">Boat Smart Watches</span
+          ><span class="price"> ₹499*</span>
+        </div>
+        <div class="card">
+          <img src="./bestofelectronics/printer.jpeg" alt="" /><span class="desc"
+            >Printers from</span
+          >
+          <span class="price"> ₹2336</span>
+        </div>
+        <div class="card">
+          <img src="./bestofelectronics/projector.jpeg" alt="" /><span
+            class="desc"
+            >Projector</span
+          >
+          <span class="price">From ₹6990</span>
+        </div>
+        <div class="card">
+          <img src="./bestofelectronics/washingmachine.jpeg" alt="" /><span
+            class="desc"
+            >Washing Machine</span
+          >
+          <span class="price">From ₹12,999</span>
+        </div>
+        <div class="card">
+          <img src="./bestofelectronics/speaker.jpeg" alt="" /><span class="desc"
+            >Speakers</span
+          >
+          <span class="price">From ₹12,856*</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="poster-container">
+      <div class="posterleft">
+        <div class="card2">
+          <img src="./bestofelectronics/earbuds.jpeg" alt="" /><span class="desc"
+            >Best True Wireless Earbuds</span
+          >
+          <span class="price">Grab Now</span>
+        </div>
+        <div class="card2">
+          <img src="./bestofelectronics/trimmer.jpeg" alt="" /><span class="desc"
+            >Best True Wireless Earbuds</span
+          >
+          <span class="price">Grab Now</span>
+        </div>
+        <div class="card2">
+          <img src="./bestofelectronics/speaker.jpeg" alt="" /><span class="desc"
+            >Best True Wireless Earbuds</span
+          >
+          <span class="price">Grab Now</span>
+        </div>
+        <div class="card2">
+          <img src="./bestofelectronics/washingmachine.jpeg" alt="" /><span
+            class="desc"
+            >Best True Wireless Earbuds</span
+          >
+          <span class="price">Grab Now</span>
+        </div>
+      </div>
+      <div class="poster">
+
+        <img src="./images/poster.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="bestofelectronics">
+        <span>Best Of Electronics</span>
+        <div class="card-container">
+          <div class="card">
+            <img src="./bestofelectronics/lap1.jpeg" alt="" /><span class="desc"
+              >UltraBook Pro 15</span
+            >
+            <span class="price">Grab Now</span>
+          </div>
+          <div class="card">
+            <img src="./bestofelectronics/lap2.jpeg" alt="" />
+            <span class="desc">Gaming Beast X300</span
+            ><span class="price"> ₹499*</span>
+          </div>
+          <div class="card">
+            <img src="./bestofelectronics/lap3.jpeg" alt="" /><span class="desc"
+              >Business Elite 14</span
+            >
+            <span class="price"> ₹2336</span>
+          </div>
+          <div class="card">
+            <img src="./bestofelectronics/lap4.jpeg" alt="" /><span
+              class="desc"
+              >Creative Studio 17</span
+            >
+            <span class="price">From ₹6990</span>
+          </div>
+          <div class="card">
+            <img src="./bestofelectronics/lap5.jpeg" alt="" /><span
+              class="desc"
+              >2-in-1 Convertible Laptop</span
+            >
+            <span class="price">From ₹12,999</span>
+          </div>
+          <div class="card">
+            <img src="./bestofelectronics/lap6.jpeg" alt="" /><span class="desc"
+              >Lightweight Travel Laptop</span
+            >
+            <span class="price">From ₹12,856*</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer starts here -->
+    <footer>
+
+      <div class="footer-up">
+        <div class="footer-up-left">
+            <div class="footer-boxes">
+                <span>About</span><br>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Flipkart Stories</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-boxes">
+                <span>Group Companies</span><br>
+                <ul>
+                    <li><a href="#">Myntra</a></li>
+                    <li><a href="#">Cleartrip</a></li>
+                    <li><a href="#">Shopsy</a></li>
+                </ul>
+            </div>
+            <div class="footer-boxes">
+                <span>Help</span><br>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Report Infringement</a></li>
+                </ul>
+            </div>
+            <div class="footer-boxes">
+                <span>Consumer Policy</span><br>
+                <ul>
+                    <li><a href="#">cancellation & returns</a></li>
+                    <li><a href="#">terms of use</a></li>
+                    <li><a href="#">security</a></li>
+                    <li><a href="#">privacy</a></li>
+                    <li><a href="#">site map</a></li>
+                    <li><a href="#">EPR compliance</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-up-right">
+            <div class="footer-boxes">
+                <span>Mail Us</span><br>
+                <p>Flipkart Internet Private Limited,
+                    Buildings Alyssa, Begonia &
+                    Clove Embassy Tech Village,
+                    Outer Ring Road, Devarabeesanahalli Village,
+                    Bengaluru, 560103,
+                    Karnataka, India</p>
+            </div>
+            <div class="footer-boxes">
+                <span>Registered Office Address</span><br>
+                <p>Flipkart Internet Private Limited,
+                    Buildings Alyssa, Begonia &
+                    Clove Embassy Tech Village,
+                    Outer Ring Road, Devarabeesanahalli Village,
+                    Bengaluru, 560103,
+                    Karnataka, India
+                    CIN: U51109KA2012PTC066107
+                    Telephone: 044-45614700 / 044-67415800</p>
+            </div>
+        </div>
+    </div>
+
+          <div class="footer-down">
+            <p>&copy; 2007-2022 Flipkart.com</p>  <i>Made By work.khaleel.dev@gmail.com</i>
+          </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>
